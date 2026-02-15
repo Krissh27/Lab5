@@ -36,7 +36,7 @@
 
 ### 🔹 Hue-Saturation Feature Clustering
 
-![Cluster Plot](images/cluster_plot.png)
+![Cluster Plot](fg.png)
 
 - Green → Cluster 0  
 - Blue → Cluster 1  
