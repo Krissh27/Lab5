@@ -1,6 +1,6 @@
 # Face Clustering and Template Classification using K-Means
 
-## 🛠 Methodology
+## Methodology
 
 ### Face Detection
 - Used OpenCV's Haar Cascade classifier.
@@ -37,6 +37,9 @@
 ### Hue-Saturation Feature Clustering
 
 ![Cluster Plot](ig.png)
+- Green → Cluster 0  
+- Blue → Cluster 1  
+- X → Centroids  
 
 ### Template Classification Result
 
@@ -45,11 +48,9 @@
 The template image is plotted in the feature space and classified based on nearest centroid.
 
 
-- Green → Cluster 0  
-- Blue → Cluster 1  
-- X → Centroids  
 
-## ✅ Conclusion
+
+## Conclusion
 
 This project demonstrates a complete machine learning workflow:
 - Face detection
@@ -57,7 +58,7 @@ This project demonstrates a complete machine learning workflow:
 - Unsupervised learning (K-Means)
 - Prediction and visualization
 
-Although the model clusters faces based on color similarity, it highlights the importance of feature selection in classification tasks.
+
 
 
 
