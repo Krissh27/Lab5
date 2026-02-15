@@ -2,41 +2,48 @@
 
 ## 🛠 Methodology
 
-### 1️⃣ Face Detection
+### Face Detection
 - Used OpenCV's Haar Cascade classifier.
 - Converted images to grayscale.
 - Applied `detectMultiScale()` to locate faces.
 
-### 2️⃣ Feature Extraction
+### Feature Extraction
 - Converted detected face regions from BGR to HSV color space.
 - Extracted:
   - Mean Hue
   - Mean Saturation
 - Created a 2D feature vector for each face.
 
-### 3️⃣ Clustering
+### Clustering
 - Applied K-Means clustering (`n_clusters = 2`).
 - Trained model on extracted Hue-Saturation features.
 - Obtained cluster centroids.
 
-### 4️⃣ Template Classification
+### Template Classification
 - Detected face in template image.
 - Extracted HSV features.
 - Used `kmeans.predict()` to determine cluster membership.
 
 ---
 
-## 📊 Visualisations
+## Visualisations
 
-### 🔹 Face Detection Output
+### Face Detection Output
 
 ![Face Detection](face%20detection.png)
 
 ---
 
-### 🔹 Hue-Saturation Feature Clustering
+### Hue-Saturation Feature Clustering
 
-![Cluster Plot](fg.png)
+![Cluster Plot](ig.png)
+
+### Template Classification Result
+
+![Template Classification](fg.png)
+
+The template image is plotted in the feature space and classified based on nearest centroid.
+
 
 - Green → Cluster 0  
 - Blue → Cluster 1  
